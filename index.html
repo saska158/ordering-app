@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Jost&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+      <div class="app-container">  
+        <header class="header">
+            <h1 class="header-title">Jimmy's Diner</h1>
+            <p class="header-text">The best burgers and pizzas in town</p>
+        </header>
+        
+        <main class="main">
+            <section class="menu" id="menu">
+        
+            </section>
+            <section class="order hidden" id="order">
+                <p class="order-title">Your order</p>
+                <div class="order-inner"  id="order-inner"></div>
+                <div class="total-price" id="total-price"></div>
+                <button class="complete-order-btn" id="complete-order-btn">Complete  order</button>
+            </section>
+
+            <div class="payment-modal hidden" id="payment-modal">
+                <p class="modal-title">Enter card details</p>
+                <form id="payment-form">
+                <input id="name-input" type="text" name="name" placeholder="Enter your name" required>
+                <input id="ccn-input" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Enter card number" required>
+                <input id="cvv-input" type="tel" maxlength="3" placeholder="Enter CVV" required>
+                <button class="pay-btn" id="pay-btn" type="submit">Pay</button> 
+                </form>       
+            </div>
+            
+            <div class="order-confirmation hidden" id="order-confirmation"></div>
+        </main>
+      </div>  
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    line-height: 1.3;
+    
+} 
+
+h1,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+button,
+.payment-modal,
+.remove {
+    font-family: 'Jost', sans-serif;
+}
+
+button {
+    background: #16DB99;
+    border-radius: 3.88991px;
+    color: #fff;
+    width: 100%;
+    padding: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/*-----Layout------*/
+
+.app-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url('img/header-img.png');
+    height: 170px;
+    color: #fff;
+    font-size: 23px;
+    padding: 45px;
+}
+
+.main {
+    padding: 45px;
+}
+
+/*Menu*/
+
+
+.item {
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 52px 0;
+}
+
+.item-info {
+    width: 100%;
+}
+
+.item-name {
+    font-size: 28px;
+    margin: 0;
+}
+
+.item-ingredients {
+    margin-bottom: 8px;
+    color: #8b8b8b;
+}
+.add-item {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-item-btn {
+    
+    color: #3c3c3c;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.add-item-btn:hover {
+    background: #DEDEDE;
+}
+
+/*Order*/
+
+.order {
+    padding: 45px 0;
+    font-size: 28px;
+}
+
+.order-title {
+    margin-bottom: 60px;
+    text-align: center
+}
+
+.order-inner {
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #393333;
+}
+
+.remove {
+    font-size: 12px;
+    color: #bbbbbb;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.total-price {
+    margin: 14px 0 50px 0;
+}
+
+.ordered-item,
+.total-price {
+    display: flex;
+    justify-content: space-between
+}
+
+.complete-order-btn {
+    font-size: 16px;
+    
+}
+
+/*Modal*/
+
+
+
+.payment-modal {
+    padding: 30px 23px;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 9px 31px 0px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    background: #fff;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 16px;
+}
+
+input {
+    font-size: 20px;
+    color: #757575;
+    width: 100%;
+    margin-bottom: 23px;
+    padding: 26px 16px;
+}
+
+.pay-btn {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/*Order confirmation*/
+
+.order-confirmation {
+    background: #ECFDF5;
+    padding: 50px 50px;
+    color: #065F46;
+    font-size: 32px;
+    margin-top: 45px;
+}
